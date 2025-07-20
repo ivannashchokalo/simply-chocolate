@@ -1,0 +1,244 @@
+:root{
+    --font-family: "Montserrat", sans-serif;
+	--black: #111;
+	--orange: #fd9222;
+	--violet: #1e1823;
+	--white: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+address{
+    font-style: normal;
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+
+/* ---COMPONENTS--- */
+
+.second-title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black);
+}
+
+.piece-second-title{
+    color: var(--orange);
+}
+
+/* ---HEADER--- */
+
+.logo{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    color: var(--black);
+}
+
+.piece-logo{
+    font-style: italic;
+}
+
+.nav-list-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: var(--black);
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus{
+    color: var(--orange);
+}
+/* ---HERO--- */
+
+.hero{
+    background: #111;
+}
+
+.main-title{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21429;
+    letter-spacing: -0.03em;
+    color: var(--white);
+}
+
+.hero-list-btn{
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.hero-list-btn:hover,
+.hero-list-btn:focus{
+    background: var(--orange);
+}
+
+.hero-scroll-down{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.03em;
+    color: var(--white);
+}
+
+.hero-scroll-down:hover,
+.hero-scroll-down:focus{
+    color: var(--orange);
+}
+/* ---BENEFITS--- */
+
+.Benefits{
+    background: #111;
+}
+
+.Benefits-list-title{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.Benefits-list-description{
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* ---DESCRIPTIONS--- */
+
+
+.description-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--black);
+}
+
+.description-list-title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+
+/* ---HOW IT'S MADE --- */
+
+.made-section-text{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--black);
+}
+
+.made-section-list-item{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--black);
+}
+
+
+/* ---FEEDBACK--- */
+
+.feedback-section-list-name{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+    color: var(--black);
+}
+
+.feedback-section-list-comment{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.feedback-btn{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: var(--black);
+}
+
+.feedback-btn:hover,
+.feedback-btn:focus{
+    background: var(--orange);
+    color: var(--white);
+}
+
+
+/* ---FOOTER--- */
+
+.footer{
+    background: #111;
+}
+
+.footer-text{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: var(--orange);
+}
+
+.footer-piece-text{
+    color: var(--orange);
+}
+
+.contact-title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: var(--white);
+}
+
+.address-list-link{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--white);
+}
+
+.address-list-link:hover,
+.address-list-link:focus{
+    color: var(--orange);
+}
+
+.footer-nav-link{
+    color: var(--white);
+}
