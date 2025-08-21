@@ -1,0 +1,102 @@
+.page-header__menu,
+.page-header__media-list {
+    display: none;
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    @include flex-center;
+    gap: 4px;
+
+    @include font($fs:14px, $fw: 700, $lh: 1.29, $color: #111);
+    letter-spacing: -0.03em;
+}
+
+.logo__part {
+    font-style: italic;
+}
+
+.logo__icon {
+    stroke: #fd9222;
+    fill: transparent;
+}
+
+.page-header__logo {
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
+
+.burger {
+    padding: 20px 0 14px 0;
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+}
+
+.burger__icon {
+    display: block;
+    stroke: #111;
+
+    .burger:hover &,
+    .burger:focus & {
+        stroke: #fd9222;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .burger {
+        display: none;
+    }
+
+    .page-header__menu,
+    .page-header__media-list {
+        display: flex;
+    }
+
+    .page-header__container {
+        display: flex;
+        align-items: center;
+    }
+
+    .page-nav {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        justify-content: space-between;
+        margin-right: 48px;
+    }
+
+    .page-header__logo {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+
+    .page-header__menu .nav-list__link {
+        display: block;
+        padding: 24px 0 32px 0;
+    }
+
+    .page-header__media-list .social-media-list__link {
+        padding: 24px 0 32px 0;
+    }
+}
+
+@media screen and (min-width: 1168px) {
+    .page-nav {
+        margin-right: 90px;
+    }
+
+    .logo {
+        @include font($fs: 18px, $lh: 1.11);
+    }
+
+    .logo__icon {
+        width: 24px;
+        height: 24px;
+    }
+}

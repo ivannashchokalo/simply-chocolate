@@ -16,85 +16,143 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Simply Chocolate</title>
   </head>
   <body>
     <!-- HEADER -->
-    <header class="page-header">
-      <div class="container page-header-container">
-        <nav class="nav">
-          <a class="logo" href="./index.html"
-            ><span class="piece-logo">SIMPLY </span>CHOCOLATE<img
-              class="logo-img"
-              src="./images/logo.svg"
-              alt="logotype"
-              width="24"
-              height="24"
-          /></a>
-          <ul class="nav-list">
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="./index.html">Home</a>
+    <!-- <header class="page-header">
+      <div class="container page-header__container">
+        <nav class="page-nav">
+          <a class="logo page-header__logo" href="./index.html"
+            ><span class="logo__text">
+              <span class="logo__part">SIMPLY </span>Chocolate
+            </span>
+            <svg class="logo__icon" width="21" height="21">
+              <use href="./images/icons.svg#logo-icon"></use>
+            </svg>
+          </a>
+          <ul class="nav-list page-header__menu">
+            <li class="nav-list__item">
+              <a
+                href="./index.html"
+                class="nav-list__link nav-list__link-background-light current"
+                >Home</a
+              >
             </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="#made">How it’s made?</a>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link nav-list__link-background-light"
+                >How it’s made?</a
+              >
             </li>
-            <li class="nav-list-item">
-              <a class="nav-list-link" href="#feedback">Chocolate is loved</a>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link nav-list__link-background-light"
+                >Chocolate is loved</a
+              >
             </li>
           </ul>
         </nav>
-        <ul class="social-media-list">
-          <li class="social-media-list-item">
-            <a
-              class="social-media-list-link"
-              href=""
-              target="_blank"
-              rel="noopener nooreferrer"
-              ><img class="social-media-list-img" src="#" alt="instagram"
-            /></a>
+
+        <ul class="social-media-list page-header__media-list">
+          <li class="social-media-list__item">
+            <a href="" class="social-media-list__link">
+              <svg class="social-media-list__icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
           </li>
-          <li class="social-media-list-item">
-            <a
-              class="social-media-list-link"
-              href=""
-              target="_blank"
-              rel="noopener nooreferrer"
-              ><img class="social-media-list-img" src="#" alt="twitter"
-            /></a>
+          <li class="social-media-list__item">
+            <a href="" class="social-media-list__link">
+              <svg class="social-media-list__icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
+        <button class="burger" type="button" data-menu-open>
+          <svg class="burger__icon" width="28" height="28">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+      </div> -->
+    <!-- mobile menu -->
+    <!-- <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" type="button" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="28" height="28">
+              <use href="./images/icons.svg#close-icon"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a
+                  href="./index.html"
+                  class="nav-list__link nav-list__link-background-dark current"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link nav-list__link-background-dark"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link nav-list__link-background-dark"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="social-media-list">
+            <li class="social-media-list__item">
+              <a href="" class="social-media-list__link">
+                <svg class="social-media-list__icon" width="22" height="22">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media-list__item">
+              <a href="" class="social-media-list__link">
+                <svg class="social-media-list__icon" width="22" height="22">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </header> -->
     <main>
       <!-- HERO -->
       <section class="hero">
-        <div class="container hero-container">
+        <div class="container hero__container">
           <h1 class="main-title">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
-          <div class="hero-additional-container">
+          <div class="hero__wrapper">
             <ul class="hero-list">
-              <li class="hero-list-item">
-                <button class="hero-list-btn" type="button">Buy now</button>
+              <li class="hero-list__item">
+                <button class="hero-list__btn" type="button">Buy now</button>
               </li>
-              <li class="hero-list-item">
-                <button class="hero-list-btn" type="button">
+              <li class="hero-list__item">
+                <button class="hero-list__btn" type="button">
                   How it’s made
                 </button>
               </li>
             </ul>
-            <a class="hero-scroll-down" href="#"
+            <a class="hero-scroll-down" href=""
               >scroll down
-              <img class="hero-scroll-down-img" src="#" alt="scroll down"
-            /></a>
+              <svg class="hero-scroll-down__icon" width="14" height="8">
+                <use href="./images/icons.svg#hero-scroll-icon"></use></svg
+            ></a>
           </div>
         </div>
       </section>
 
       <!-- BENEFITS -->
-      <section class="benefits">
+      <!-- <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits-list">
@@ -131,10 +189,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- DESCRIPTIONS-->
-      <section class="description">
+      <!-- <section class="description">
         <div class="container">
           <h2 class="second-title description-second-title">
             It all adds up to one exceptional
@@ -189,10 +247,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- HOW IT'S MADE -->
-      <section class="made-section" id="made">
+      <!-- MADE -->
+      <!-- <section class="made-section" id="made">
         <div class="container">
           <h2 class="second-title">
             How it’s <span class="piece-second-title">made?</span>
@@ -227,10 +285,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- FEEDBACK -->
-      <section class="feedback-section" id="feedback">
+      <!-- <section class="feedback-section" id="feedback">
         <div class="container">
           <h2 class="second-title">
             <span class="piece-second-title">Chocolate</span> is loved
@@ -283,7 +341,7 @@
           </ul>
           <button class="feedback-btn" type="button">Leave a review</button>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- FOOTER -->
@@ -331,5 +389,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

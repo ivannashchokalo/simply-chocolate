@@ -1,0 +1,45 @@
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.nav-list__link {
+    @include font($fs:14px, $fw: 500, $lh: 1.14);
+    letter-spacing: -0.02em;
+
+    &:active {
+        color: #fd9222;
+    }
+
+    &.current {
+    color: #fd9222;
+}
+}
+
+
+.nav-list__link-background-dark {
+    color: #fff;
+}
+
+.nav-list__link-background-light {
+    color: #111;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .nav-list {
+        flex-direction: row;
+    }
+
+    .nav-list__link {
+        &:hover,
+        &:focus {
+            color: #fd9222;
+        }
+    }
+        
+}
+

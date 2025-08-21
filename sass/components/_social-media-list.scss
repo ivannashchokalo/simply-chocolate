@@ -1,0 +1,32 @@
+.social-media-list {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.social-media-list__link {
+    display: block;
+    line-height: 0;
+}
+
+.social-media-list__icon {
+    stroke: #fff;
+
+    .social-media-list__link:active & {
+        stroke: #fd9222;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    .social-media-list__icon {
+        stroke: #111;
+        fill: #fff;
+
+        .social-media-list__link:hover &,
+        .social-media-list__link:focus & {
+            stroke: #fd9222;
+        }
+    }
+}
+
