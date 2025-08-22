@@ -643,7 +643,6 @@ body {
 
 /* ====== DESCRIPTIONS ====== */
 
-
 .description {
   padding-top: 60px;;
 }
@@ -741,6 +740,18 @@ body {
   .description-list__item {
     width: calc((100% - 32px) / 2);
   }
+
+  .description-list__item:not(:first-child) {
+    order: 2;
+  }
+
+  .description-list:first-child {
+    order: 0;
+  }
+
+  .description-list__item:last-child {
+    order: 1;
+  }
 }
 
 @media screen and (min-width: 1168px) {
@@ -755,10 +766,137 @@ body {
   .description-list__item {
     width: calc((100% - 57px) / 4);
   }
+
+  .description-list__item:last-child {
+    order: 3;
+  }
 }
 
 
 /* ====== MADE ====== */
+
+.making {
+  padding-top: 60px;
+}
+
+.making__title {
+  margin-bottom: 32px;
+}
+
+.making__flex-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.making__img-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.making__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: transparent;
+  stroke: #fff;
+  cursor: pointer;
+}
+
+.making__text-wrapper {
+  padding: 20px 14px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.making__text {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111;
+}
+
+.making__list-item {
+  display: inline-block;
+  position: relative;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.making__list-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.making__list-item::before {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #eceded;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  content: '';
+}
+
+@media screen and (min-width: 768px) {
+  .making__icon {
+    display: none;
+  }
+
+  .making__container {
+    padding: 0 61px;
+  }
+
+  .making {
+    padding-top: 80px;
+  }
+
+  .making__title {
+    margin-bottom: 50px;
+  }
+
+  .making__text-wrapper {
+    padding: 32px 105px 32px 32px;
+  }
+
+  .making__text {
+    max-width: 350px;
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1168px){
+  .making__container {
+    padding: 0 16px;
+  }
+
+  .making {
+    padding-top: 110px;
+  }
+
+  .making__img-wrapper {
+    margin: 0;
+  }
+
+  .making__text-wrapper {
+    width: calc(100% - 620px);
+    height: 100%;
+    padding: 32px 59px 32px 32px;
+  }
+
+  .making__list-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+}
+
 
 
 
