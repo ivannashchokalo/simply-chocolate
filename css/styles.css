@@ -773,7 +773,7 @@ body {
 }
 
 
-/* ====== MADE ====== */
+/* ====== MAKING ====== */
 
 .making {
   padding-top: 60px;
@@ -896,6 +896,168 @@ body {
   margin-bottom: 24px;
 }
 }
+
+
+
+/* ====== FEEDBACK ====== */
+
+.mob__hidden-item {
+  display: none;
+}
+
+.feedback {
+  padding: 60px 0;
+}
+
+.feedback__title {
+  margin-bottom: 32px;
+}
+
+.feedback__list {
+  margin-bottom: 20px;
+}
+
+.feedback-list__item {
+  position: relative;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.feedback-list__wrapper {
+  min-height: 200px;
+  padding: 56px 18px 18px 18px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;  
+}
+
+.feedback-list__img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feedback-list__name {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
+}
+
+.feedback-list__comment {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.feedback__offer-banner {
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.feedback__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  min-width: 165px;
+  height: 41px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  background-color: transparent;
+
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #111;
+}
+
+.feedback__btn:active {
+  color: #fff;
+  background-color: #fd9222;
+}
+
+@media screen and (min-width: 768px) {
+  .mob__hidden-item {
+    display: block;
+  }
+
+  .tab__hedden-item {
+    display: none;
+  }
+
+  .feedback {
+    padding: 80px 0;
+  }
+
+  .feedback__title {
+    margin-bottom: 50px;
+  }
+
+  .feedback__list {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .feedback-list__item {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .feedback-list__wrapper {
+    padding: 56px 16px 16px 16px;
+  }
+
+  .feedback__offer-banner {
+    margin-bottom: 50px;
+  }
+
+  .feedback__btn {
+    min-width: 222px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .feedback__btn:hover,
+  .feedback__btn:focus {
+    color: #fff;
+    background-color: #fd9222;
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .feedback__offer-banner {
+    display: none;
+  }
+
+  .tab__hedden-item {
+    display: block;
+  }
+
+  .feedback{
+    padding: 100px 0;
+  }
+
+  .feedback__list {
+    gap: 28px;
+    margin-bottom: 49px;
+  }
+
+  .feedback-list__item {
+    width: calc((100% - 56px) / 3);
+  }
+
+  .feedback-list__wrapper {
+    padding: 56px 24px 24px 24px;
+  }
+}
+
+
 
 
 
